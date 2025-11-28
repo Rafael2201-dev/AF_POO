@@ -1,9 +1,20 @@
- class cliente {
+public class Cliente {
     private String nome;
     private int id;
     private String email;
     private String telefone;
     private String endereco;
+
+    public Cliente() {
+    }
+
+    public Cliente(String nome, int id, String email, String telefone, String endereco) {
+        this.nome = nome;
+        this.id = id;
+        this.email = email;
+        this.telefone = telefone;
+        this.endereco = endereco;
+    }
 
         public int getId() {
             return id;

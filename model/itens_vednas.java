@@ -1,10 +1,21 @@
 
-public class itens_vednas {
+public class Itens_vednas {
     private int id;
     private int idVenda;
     private int idProduto;
     private int quantidade;
     private double precoUnitario;
+
+    public Itens_vednas() {
+    }
+
+    public Itens_vednas(int id, int idVenda, int idProduto, int quantidade, double precoUnitario) {
+        this.id = id;
+        this.idVenda = idVenda;
+        this.idProduto = idProduto;
+        this.quantidade = quantidade;
+        this.precoUnitario = precoUnitario;
+    }
 
     public int getId() {
         return id;
