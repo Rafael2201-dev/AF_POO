@@ -59,7 +59,7 @@ Reorganiza o histórico (mais avançado — cuidado 😅).
 🌐 Conectar com repositório remoto
 
 git remote -v
-Mostra os remotos conectados (geralmente origin).
+Mostra os remotos conectados (geralmente origi)
 
 git remote add origin URL
 Conecta sua pasta a um repositório remoto.
