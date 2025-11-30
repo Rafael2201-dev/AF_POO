@@ -1,3 +1,4 @@
+package model;
 public class Cliente {
     private String nome;
     private int id;
@@ -8,9 +9,8 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(String nome, int id, String email, String telefone, String endereco) {
+    public Cliente(String nome, String email, String telefone, String endereco) {
         this.nome = nome;
-        this.id = id;
         this.email = email;
         this.telefone = telefone;
         this.endereco = endereco;

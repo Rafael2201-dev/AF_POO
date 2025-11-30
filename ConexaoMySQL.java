@@ -3,19 +3,24 @@ import java.sql.DriverManager;
 
 public class ConexaoMySQL {
 
-    public static void main(String[] args) {
+    public static Connection getConnection() {
         String url = "jdbc:mysql://localhost:3306/loja"; 
         String user = "root";        // coloque seu usuário
         String password = "2201"; // coloque sua senha
+        Connection conn = null;
 
         try {
-            Connection conn = DriverManager.getConnection(url, user, password);
+            conn = DriverManager.getConnection(url, user, password);
             System.out.println("Conexão bem-sucedida!");
 
-            conn.close();
+            return conn;
         } catch (Exception e) {
+
             System.out.println("Erro ao conectar:");
             e.printStackTrace();
+
+            return null;
+
         }
     }
 }

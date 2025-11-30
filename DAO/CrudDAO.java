@@ -1,10 +1,13 @@
 package DAO;
 
+import java.util.List;
+
 public interface CrudDAO<T> {
-    void create(T objeto);
-    T read(int id);
-    void update(T objeto);
-    void delete(int id);
+    void inserir(T obj);
+    void atualizar(T obj);
+    void deletar(int id);
+    List<T> listarTodos();
 }
+
 
 

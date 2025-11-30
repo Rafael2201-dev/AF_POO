@@ -1,4 +1,4 @@
-
+package model;
 public class Itens_vednas {
     private int id;
     private int idVenda;
